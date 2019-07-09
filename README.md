@@ -6,9 +6,14 @@ Utilize ESLint, Prettier, EditorConfig, React Navigation e todas outras ferramen
 
 O projeto terá as mesmas funcionalidades que o projeto web mas deve possuir uma interface mobile.
 
-O layout do projeto está em abexo com esse desafio. O arquivo `.sketch` pode ser aberto no Figma, que é uma ferramente de prototipação online.
+O layout do projeto está em abexo com esse desafio. O arquivo `.sketch` (no diretório `assets-desafio`) pode ser aberto no Figma, que é uma ferramenta de prototipação online.
 
-## Entrega 
+Resultado:
+<center>
+<img src="demo.gif" height="400">
+</center>
+
+## Entrega
 
 Esse desafio **não precisa ser entregue** e não receberá correção, mas você pode ver o resultado do código do desafio aqui: https://github.com/Rocketseat/bootcamp-gostack-desafio-07
 
