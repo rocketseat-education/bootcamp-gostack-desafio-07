@@ -52,7 +52,7 @@ function Cart({ navigation, products, total, removeFromCart, updateAmountRequest
                 <ProductImage source={{ uri: product.image }} />
                 <ProductDetails>
                   <ProductTitle>{product.title}</ProductTitle>
-                  <ProductPrice>{formatPrice(product.price)}</ProductPrice>
+                  <ProductPrice>{item.priceFormatted}</ProductPrice>
                 </ProductDetails>
                 <ProductDelete onPress={() => removeFromCart(product.id)}>
                   <Icon name="delete-forever" size={24} color={colors.primary} />
@@ -99,6 +99,7 @@ const mapStateToProps = state => ({
   products: state.cart.map(product => ({
     ...product,
     subtotal: formatPrice(product.price * product.amount),
+    priceFormatted: formatPrice(product.price)
   })),
   total: formatPrice(
     state.cart.reduce(
